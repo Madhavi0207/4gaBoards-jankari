@@ -3,6 +3,7 @@ import { IWorldOptions, setWorldConstructor, World } from '@cucumber/cucumber';
 import { Browser, BrowserContext, Page } from '@playwright/test';
 
 import { LoginPage } from '../pageObject/LoginPage';
+import { CardPage } from '../pageObject/CardPage';
 
 export class CustomWorld extends World {
   browser!: Browser;
