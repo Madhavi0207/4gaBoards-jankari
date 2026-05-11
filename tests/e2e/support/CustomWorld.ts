@@ -3,6 +3,7 @@ import { IWorldOptions, setWorldConstructor, World } from '@cucumber/cucumber';
 import { Browser, BrowserContext, Page } from '@playwright/test';
 
 import { LoginPage } from '../pageObject/LoginPage';
+import { DeleteCardPage } from '../pageObject/DeleteCardPage';
 
 export class CustomWorld extends World {
   browser!: Browser;
@@ -10,7 +11,7 @@ export class CustomWorld extends World {
   page!: Page;
 
   loginPage!: LoginPage;
-  cardPage!: CardPage;
+  deleteCardPage!: DeleteCardPage;
 
   users: Record<string, unknown> = {};
   meetings: Record<string, unknown> = {};
