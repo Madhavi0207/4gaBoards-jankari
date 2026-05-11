@@ -24,5 +24,5 @@ Then('admin user should be navigated to admin panel dashboard', async function (
   }
 
   await expect(this.page).toHaveURL(this.loginPage.baseUrl);
-  await expect(this.page.locator("div[title='Dashboard']")).toBeVisible();
+  await expect(this.loginPage.dashboardSelector).toBeVisible();
 });
